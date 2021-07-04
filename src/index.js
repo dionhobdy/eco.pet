@@ -29,7 +29,8 @@ const createWindow = () => {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', () => {
-  let mainWindow = new BrowserWindow({width: 1024, height: 600, frame: false, toolbar: false, webPreferences: { nodeIntegration: true }}); 
+  let mainWindow = new BrowserWindow({frame: false, toolbar: false, webPreferences: { nodeIntegration: true }}); 
+  mainWindow.maximize();
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 });
 
