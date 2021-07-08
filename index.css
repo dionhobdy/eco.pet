@@ -1,0 +1,120 @@
+body {
+  background-color: #abed8e;
+  border: 1px solid rgba(255,255,255,0);
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* pet section */
+.placeHolder {
+  background-color: #000;
+  justify-self: center;
+  margin-top: 150px;
+  margin-left: 775px;
+  opacity: .85;
+  position: absolute;
+  width: 300px;
+  height: 450px;
+  z-index: 1;
+}
+
+/* command section */
+.button {
+  margin-top: 725px;
+  opacity: .75;
+  padding: 75px 50px 50px;
+}
+
+.button:active {
+  opacity: 1;
+}
+
+.button1 {
+  margin-top: 725px;
+  opacity: .75;
+  padding: 75px 50px 50px;
+}
+
+.button1:active {
+  opacity: 1;
+}
+
+.waterButton {
+  margin-top: 725px;
+  opacity: .75;
+  padding: 75px 50px 50px;
+}
+
+.waterButton:active {
+  opacity: 1;
+}
+
+/* main */
+.positioning {
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+/* menus */
+
+.screen {
+  background-color: #5ba86c;
+  margin-top: 15px;
+  margin-left: 185px;
+  position: fixed;
+  width: 1500px;
+  height: 720px;
+  opacity: .25;
+  z-index: 0;
+}
+
+/* settings screen */
+.setContainer {
+  margin-top: 50px;
+  margin-left: 335px;
+  opacity: .65;
+  position: absolute;
+  width: 1200px;
+  height: 650px;
+  z-index: 1;
+}
+
+.setHeader {
+  color: #000;
+  font-family: 'VT323', monospace;
+  font-size: 85px;
+  margin-top: 50px;
+  margin-left: -900px;
+}
+
+/* title */
+
+.title {
+  margin-left: -3px;
+  position: absolute;
+  z-index: 1;
+
+  color: #000;
+  opacity: .75;
+  font-family: 'VT323', monospace;
+  font-size: 50px;
+}
+
+.titleBanner {
+  background-color: #fff;
+  position: absolute;
+  width: 175px;
+  height: 50px;
+  z-index: 0;
+}
+
+.window-title {
+  margin-top: 7px;
+  margin-left: 5px;
+  opacity: .85;
+}
+
+.window-title:active {
+  opacity: 1;
+}
