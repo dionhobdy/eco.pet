@@ -1,7 +1,7 @@
 body {
   background-color: #abed8e;
   border: 1px solid rgba(255,255,255,0);
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Press Start 2P', cursive;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -80,41 +80,57 @@ body {
   z-index: 1;
 }
 
+.setDesc {
+  color:#000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  padding-top: 25px;
+}
+
 .setHeader {
   color: #000;
-  font-family: 'VT323', monospace;
+  font-family: 'Press Start 2P', cursive;
   font-size: 85px;
   margin-top: 50px;
-  margin-left: -900px;
 }
 
-/* title */
-
-.title {
-  margin-left: -3px;
-  position: absolute;
-  z-index: 1;
-
+.setMode {
+  display: inline-block;
   color: #000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 45px;
+  margin-top: 25px;
   opacity: .75;
-  font-family: 'VT323', monospace;
-  font-size: 50px;
+  padding-right: 20px;
 }
 
-.titleBanner {
-  background-color: #fff;
+.setMode:active {
+  opacity: 1;
+}
+
+.setSection {
+  display: inline-block;
   position: absolute;
-  width: 175px;
-  height: 50px;
+  height: 500px;
+  margin-top: 25px;
+  width: 700px;
   z-index: 0;
 }
 
-.window-title {
-  margin-top: 7px;
-  margin-left: 5px;
-  opacity: .85;
+.setSection1 {
+  display: inline-block;
+  position: absolute;
+  background-color: #000;
+  height: 500px;
+  opacity: .7;
+  width: 500px;
 }
 
-.window-title:active {
-  opacity: 1;
+.setTopic {
+  color: #000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 35px;
+  margin-top: 25px;
+  opacity: .5;
+  padding-top: 25px;
 }
