@@ -50,6 +50,24 @@ body {
   opacity: 1;
 }
 
+/* info screen */
+.infoContainer {
+  margin-top: 50px;
+  margin-left: 335px;
+  opacity: .65;
+  position: absolute;
+  width: 1200px;
+  height: 650px;
+  z-index: 1;
+}
+
+.infoHeader {
+  color: #000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 85px;
+  margin-top: 50px;
+}
+
 /* main */
 .positioning {
   margin-top: 100px;
@@ -83,15 +101,25 @@ body {
 .setDesc {
   color:#000;
   font-family: 'Press Start 2P', cursive;
-  font-size: 12px;
+  font-size: 15px;
   padding-top: 25px;
+}
+
+.setDivider {
+  display: inline-block;
+  color: #000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 45px;
+  margin-top: 25px;
+  opacity: .75;
+  padding-right: 20px;
 }
 
 .setHeader {
   color: #000;
   font-family: 'Press Start 2P', cursive;
   font-size: 85px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .setMode {
@@ -112,17 +140,18 @@ body {
   display: inline-block;
   position: absolute;
   height: 500px;
-  margin-top: 25px;
-  width: 700px;
+  margin-top: 0px;
+  margin-left: -75px;
+  width: 750px;
   z-index: 0;
 }
 
 .setSection1 {
   display: inline-block;
   position: absolute;
-  background-color: #000;
-  height: 500px;
-  opacity: .7;
+  height: 450px;
+  margin-top: 75px;
+  margin-left: 795px;
   width: 500px;
 }
 
@@ -133,4 +162,12 @@ body {
   margin-top: 25px;
   opacity: .5;
   padding-top: 25px;
+}
+
+#setConfirm {
+  opacity: .85;
+}
+
+#setUpdate {
+  margin-top: 100px;
 }

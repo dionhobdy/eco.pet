@@ -22,36 +22,50 @@
         <center>
 
         <!-- pet placement -->
-          <div id="place" >
+          <div id="place">
             <div id="placeHolder" class="placeHolder"/>
           </div>
           </center>
 
-        <!-- credits section -->
+        <!-- info screen -->
+          <div id="place">
+            <div id="infoScreen" class="infoContainer">
+              <center><div class="infoHeader">INFO</div></center>
+            </div>
+          </div>
+
+        <!-- settings section -->
           <div id="place">
             <div id="setScreen" class="setContainer">
               <center><div class="setHeader">SETTINGS</div></center>
 
-              <div class="setSection"></div>
+              <div class="setSection">
               <!-- location -->
-              <div class="setTopic">Location Mode</div>
-              <div class="setMode">Inside</div>
-              <div class="setMode">|</div>
-              <div class="setMode">Outside</div>
-              <div class="setDesc">Outside Mode enables WEATHER</div>
+              <div id="setLocation" class="setTopic">Location Mode</div>
+              <div id="setInside" class="setMode">Inside</div>
+              <div class="setDivider">|</div>
+              <div id="setOutside" class="setMode">Outside</div>
+              <div class="setDesc">Outside Mode enables WEATHER integration</div>
 
               <!-- appearance -->
               <div class="setTopic">Appearance</div>
               <div class="setMode">Skin</div>
-              <div class="setMode">|</div>
+              <div class="setDivider">|</div>
               <div class="setMode">Theme</div>
 
               <!-- audio -->
-              <div class="setTopic">Audio</div>
-              <div class="setMode">On</div>
-              <div class="setMode">|</div>
-              <div class="setMode">Off</div>
+              <div id="setAudio" class="setTopic">Audio</div>
+              <div id="setOn" class="setMode">On</div>
+              <div class="setDivider">|</div>
+              <div id="setOff" class="setMode">Off</div>
+              </div>
 
+              <div class="setSection1">
+                <center>
+                  <div id="setUpdate" class="setTopic"></div>
+                  <div id="setConfirm" class="setTopic"></div>
+                </center>
+              </div>
             </div>
           </div>
 
@@ -63,8 +77,8 @@
           <img id="pet" class="button" src="./assets/pet.png"></img>
           <img id="water" class="button" src="./assets/water.png"></img>
           <img id="weather" class="button" src="./assets/weather.png"></img>
+          <img id="settings" class="button" src="./assets/settings.png"></img>
           <img id="info" class="button" src="./assets/info.png"></img>
-          <img id="settings" id="settings" class="button" src="./assets/settings.png"></img>
         </center>
     </div>
   </body>
