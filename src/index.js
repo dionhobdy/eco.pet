@@ -2,21 +2,23 @@ const { app, BrowserWindow, Menu } = require('electron');
 require('electron-reload')(__dirname);
 const path = require('path');
 
+
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
   app.quit();
 }
 
+
 const createWindow = () => {
   // Create the browser window.
-  /*const mainWindow = new BrowserWindow({
-    width: 300,
+  const mainWindow = new BrowserWindow({
+    width: 1024,
     height: 600,
     frame: false,
     webPreferences: {
       nodeIntegration: true
     }
-  });*/
+  });
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
@@ -32,7 +34,16 @@ app.on('ready', () => {
   let mainWindow = new BrowserWindow({frame: false, toolbar: false, webPreferences: { nodeIntegration: true }}); 
   mainWindow.maximize();
   mainWindow.loadURL(`file://${__dirname}/index.html`);
+
+  const electron = require('electron');
+const remote = electron.remote;
+
+function closeApp() {
+  if (process.platform !== 'darwin') { remote.app.exit(); }
+}
+
 });
+
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits

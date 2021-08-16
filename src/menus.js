@@ -1,11 +1,54 @@
 window.$ = window.jQuery = require('jquery');
 
 $(document).ready(function () {
-    $("#info, #settings").click(function () {
-        $("#placeHolder").fadeOut("fast");
-    }); // the info and settings buttons should pull the pet graphics
+    $("#infoScreen, #weather, #setScreen").hide(); // hide the first placeholder, otherwise it will appear over the initial place holder
 
-    $("#pet").click(function () {
+    $("#settings").click(function () {
+        $("#placeHolder, #infoScreen").hide();
+        $("#setUpdate, #setConfirm").hide();
+        $("#setScreen").fadeIn("fast");
+
+        $("#setInside").click(function () {
+            $("#setUpdate").text("Location Mode Updated");
+            $("#setConfirm").text("Inside");
+            $("#weather").hide();
+            $("#setUpdate, #setConfirm").fadeIn(1000);
+            $("#setUpdate, #setConfirm").fadeOut(1500);
+        }); // update the inner html of locationConfirm and fade in
+
+        $("#setOutside").click(function () {
+            $("#setUpdate").text("Location Mode Updated");
+            $("#setConfirm").text("Outside");
+            $("#weather").show();
+            $("#setUpdate, #setConfirm").fadeIn(1000);
+            $("#setUpdate, #setConfirm").fadeOut(1500);
+        }); // update the inner html of locationConfirm and fade in
+
+        $("#setOn").click(function () {
+            $("#setUpdate").text("Audio Mode Updated");
+            $("#setConfirm").text("On");
+            $("#setHolder").toggle("hide");
+            $("#setUpdate, #setConfirm").fadeIn(1000);
+            $("#setUpdate, #setConfirm").fadeOut(1500);
+
+        });
+
+        $("#setOff").click(function () {
+            $("#setUpdate").text("Audio Mode Updated");
+            $("#setConfirm").text("Off");
+            $("#setUpdate, #setConfirm").fadeIn(1000);
+            $("#setUpdate, #setConfirm").fadeOut(1500);
+        });
+
+    }); // the settings button should pull graphics and display settings screen
+
+    $("#info").click(function () {
+        $("#placeHolder, #setScreen").hide();
+        $("#infoScreen").fadeIn("fast");
+    }); // the info button should pull graphics and display info screen
+
+    $("#pet, #water, #weather").click(function () {
+        $("#infoScreen, #setScreen").hide();
         $("#placeHolder").fadeIn("fast");
-    }); // the pet button should bring the pet graphics back 
+    }); // the pet, water and weather buttons should bring the pet graphics back 
 });

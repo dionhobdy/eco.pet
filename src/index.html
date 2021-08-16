@@ -1,35 +1,114 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/water.css">
+    <link rel="stylesheet" href="styles/weather.css">
+    <link rel="stylesheet" href="styles/settings.css">
+    <link rel="stylesheet" href="styles/info.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
 
     <script src="menus.js"></script>
   </head>
   <body>
-    
-    <header id="titlebar">
-      <div id="drag-region">
-        <div id="window-title">
-          <span>[ECO PET]</span>
-        </div>
-    </header>
-
-    <div id="main">
+    <div class="positioning">
         <center>
-          <div id="place" >
+
+        <!-- pet placement -->
+          <div id="place">
             <div id="placeHolder" class="placeHolder"/>
           </div>
-          <div class="screen"></div>
+          </center>
 
+        <!-- info screen -->
+          <div id="place">
+            <div id="infoScreen" class="infoContainer">
+              <center><div class="infoHeader">INFO</div></center>
+
+          <center>
+              <div class="creditContainer">
+                <div id="infoTitle" class="infoTitle">Engineer</div>
+                <div id="infoName" class="infoName">Dion Hobdy</div>
+
+                <div id="infoTitle" class="infoTitle">Quality Assurance</div>
+                <div id="infoName" class="infoName">QA Person One</div>
+                <div id="infoName" class="infoName">QA Person Two</div>
+
+                <div id="infoTitle" class="infoTitle">Pet Artists</div>
+                <div id="infoName" class="infoName">Pet Artist One</div>
+                <div id="infoName" class="infoName">Pet Artist Two</div>
+                <div id="infoName" class="infoName">Pet Artist Three</div>
+             </div>
+
+            <div class="creditContainer2">
+              <div id="infoTitle" class="infoTitle">Other Assets</div>
+              <div id="infoName" class="infoName">iconmonstr</div>
+
+              <div id="infoTitle" class="infoTitle">Special Thanks</div>
+              <div id="infoName" class="infoName">Test Plant (Test Plant)</div>
+              <div id="infoName" class="infoName">...And You!</div>
+
+              <a href="https://github.com/dionhobdy/eco_pet"><img id="infoGitHub" class="infoGitHub" src="./assets/infoGitHub.png"/></a>
+            </div>
+          </center>
+        
+          </div>
+        </div>
+
+        <!-- settings section -->
+          <div id="place">
+            <div id="setScreen" class="setContainer">
+              <center><div class="setHeader">SETTINGS</div></center>
+
+              <div class="setSection">
+              <!-- location -->
+              <div id="setLocation" class="setTopic">Location Mode</div>
+              <div id="setInside" class="setMode">Inside</div>
+              <div class="setDivider">|</div>
+              <div id="setOutside" class="setMode">Outside</div>
+              <div class="setDesc">Outside Mode enables WEATHER integration</div>
+
+              <!-- appearance -->
+              <div class="setTopic">Appearance</div>
+              <div class="setMode">Pet</div>
+              <div class="setDivider">|</div>
+              <div class="setMode">Theme</div>
+
+              <!-- audio -->
+              <div id="setAudio" class="setTopic">Audio</div>
+              <div id="setOn" class="setMode">On</div>
+              <div class="setDivider">|</div>
+              <div id="setOff" class="setMode">Off</div>
+              </div>
+
+              <div class="setSection1">
+                <center>
+                  <div id="setUpdate" class="setTopic"></div>
+                  <div id="setConfirm" class="setTopic"></div>
+                </center>
+
+                <div id="closeApp" class="closeBtn">Quit</div>
+              </div>
+            </div>
+          </div>
+
+        <center>
+        <!-- screen -->
+        <div class="screen"></div>
+
+        <!-- command ceneter -->
           <img id="pet" class="button" src="./assets/pet.png"></img>
           <img id="water" class="button" src="./assets/water.png"></img>
           <img id="weather" class="button" src="./assets/weather.png"></img>
+          <img id="settings" class="button" src="./assets/settings.png"></img>
           <img id="info" class="button" src="./assets/info.png"></img>
-          <img id="settings" id="settings" class="button" src="./assets/settings.png"></img>
         </center>
     </div>
   </body>
